@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>three.js webgl - geometry - vertex colors</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="css/head_menu.css">
+		<script src="proj/js/jquery-2.1.4.js"></script>
+		<style>
+			*{
+				margin:0;
+				padding:0;
+			}
+			body {
+				overflow: hidden;
+			}
+			.index_cen {
+				display:block;
+				width:500px;
+				height:500px;
+				text-align:center;
+			}
+				.index_cen a {
+					padding:12px 20px;
+					background-color: #0071bd;
+					border-radius:20px;
+					text-decoration: none;
+					color: #fff;
+					transition:0.3s;
+				}
+				.index_cen a:hover {
+					padding:18px 24px;
+					transition:0.3s;
+				}
+		</style>
+	</head>
+	<body>		
+		<!--- Панель меню ---->
+		<div class="menu_panel">
+			<a href="#" id="cl_menu_but" class="close_menu_pan"><img src="img/close.svg" width="28px"></a>
+			<div style="float:left;">
+				<ul>
+					<li><a href="#" class="menu_op_page">Главная</a></li>
+					<li><a href="proj/objects.html">Экспонаты</a></li>
+					<li><a href="proj/paper.html">Открытки</a></li>
+					<li><a href="about.html">Проект</a></li>
+				</ul>
+			</div>
+			<div style="float:right;">
+				<ul class="social_network" >
+					<li><a href="https://vk.com/ingriamuseum" target="_blank"><img src="img/vk.svg" width="34px"></a></li>
+					<li><a href="http://3d.paraplan.io/" target="_blank"><img src="img/paraplan_logo.svg" width="34px"></a><div class="paraplan_panel">Разработка интерактивной графики.<br/> Подписывайтесь <a target="_blank" href="https://vk.com/paraplanio">на паблик</a></div></li>
+				</ul>
+			</div>
+		</div>
+
+		
+				<!--- Шапка ---->
+		<div class="hdr_menu_contener">
+			<div class="menu_but">
+				<a href="#" id="menu_but"><img src="img/menu_but.jpg"></a>
+			</div>
+		</div>
+		
+		
+		<div class="index_cen">
+				<img src="img/logo.svg" width="100%"/>
+				<a href="proj/objects.html">Смотреть экспонаты</a>
+		</div>
+		
+		<div id="container"></div>
+		<script src="js/action_panel.js"></script> <!---- Все подвижные панели ----->
+		<script src="build/three.min.js"></script>
+		<script src="proj/js/Detector.js"></script>
+		<script src="js/index_sc.js"></script>
+	</body>
+</html>

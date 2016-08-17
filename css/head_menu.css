@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700,700italic&subset=latin,cyrillic-ext,cyrillic);
+a {
+    outline: none;
+	text-decoration:none;
+   }
+
+
+body {	
+	font-family: 'Noto Serif', serif;
+}
+
+h1 {
+	font-size: 1.5rem;
+	color:#d6a915;
+}
+
+.hdr_menu_contener {
+	position:fixed;
+	z-index:30;
+	top:0;
+	left:0;
+    right:0;
+}
+	.menu_but {
+		padding:37px 24px;
+		display: inline;
+		float: left;
+		background-color: #fff;
+	}
+	
+	.info_but_block {
+		float: right;
+		padding:37px 24px;
+	}
+	#info_but {
+		display: block;
+		width:42px;
+		height:42px;
+		background-image: url(../img/info.png);
+		background-size: cover;
+		transition: background-position 0.5s;
+	}
+	#info_but.inf {
+		background-position: 0 0;
+	}
+	#info_but.cl {
+		background-position: 42px 0;
+	}
+	
+	.menu_panel {
+					position:fixed;
+					top:-154px;
+					left:0;
+					right:0;
+					background-color:#fff;
+					border-bottom:1px solid #cfcfcf;
+					padding-top:37px;
+					padding-right:37px;
+					padding-bottom:24px;
+					padding-left:24px;
+					z-index:900;
+				}
+				.menu_panel li {
+					display: inline;
+				}
+				.menu_panel ul {
+					 word-spacing: 14px;
+				}
+				.menu_panel a {
+					color:#d6a915;
+					font-size:20px;
+				}
+				.menu_panel a:hover {
+					text-decoration: underline;
+				}
+				
+				.menu_op_page {
+					text-decoration: line-through;
+				}
+
+				.menu_social {
+					float:right;
+				}
+				.close_menu_pan {
+					float:left;
+					margin-right:50px;
+				}
+				.social_network a{
+					opacity:0.5;
+					transition:0.5s;
+				}
+				.social_network a:hover {
+					opacity:1;
+					transition:0.5s;
+				}
+				.paraplan_panel {
+					position:absolute;
+					top:90px;
+					right:30px;
+					padding:10px;
+					background-color:#ec145a;
+					opacity:0;
+					transition:0.8s;
+					 word-spacing: 4px;
+					 color:#fff;
+					 border-radius:20px;
+				}
+					.paraplan_panel a {
+						color: #fff;
+					}
+				.social_network li:hover  .paraplan_panel {
+					opacity:1;
+					background-color: rgb( 236, 20, 90, 0.5);
+					transition:0.8s;
+				}
